@@ -6,7 +6,7 @@ This driver is for educational purposes only and demonstrates the use of DPC in 
 
 ## Description
 
-The `DPCBugcheckDriver` is designed to demonstrate the improper use of DPC routines that leads to a system crash. Upon loading, the driver initializes a DPC and inserts it into the system's DPC queue. The DPC routine then attempts an illegal operation by calling `KeDelayExecutionThread`, a wait operation, causing the system to crash with a Bug Check code of 0xB8 (ATTEMPTED_SWITCH_FROM_DPC).
+The `DPCBugcheckDriver` is designed to demonstrate the improper use of DPC routines that leads to a system crash. Upon loading, the driver initializes a DPC and inserts it into the system's DPC queue. The DPC routine then attempts an illegal operation by calling `KeDelayExecutionThread`, a wait operation, causing the system to crash with a Bug Check code of 0xB8 (ATTEMPTED_SWITCH_FROM_DPC). https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0xb8--attempted-switch-from-dpc
 
 ## Installation
 
